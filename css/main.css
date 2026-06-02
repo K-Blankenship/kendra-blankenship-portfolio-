@@ -170,3 +170,35 @@ footer {
     margin: 0 auto;
   }
 }
+.portrait-frame {
+  padding: 4px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #35e4ff,
+      #9b8cff,
+      #ff3ea5
+    );
+
+  box-shadow:
+    0 0 20px rgba(53, 228, 255, 0.7),
+    0 0 35px rgba(155, 140, 255, 0.5),
+    0 0 45px rgba(255, 62, 165, 0.4);
+
+  position: relative;
+}
+
+.portrait-container {
+  background: #050814;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.portrait-container img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
