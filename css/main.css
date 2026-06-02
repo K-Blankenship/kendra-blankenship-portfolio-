@@ -72,10 +72,51 @@ body {
 }
 
 .resume-button {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #ff3ea5;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  margin-top: 1.5rem;
+  padding: 0.85rem 2rem;
+
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+
+  color: #ff3ea5;
+
+  border: 2px solid #ff3ea5;
+  border-radius: 14px;
+
+  background: rgba(5, 8, 20, 0.8);
+
+  box-shadow:
+    0 0 15px rgba(255, 62, 165, 0.7),
+    0 0 25px rgba(255, 62, 165, 0.4);
+
+  transition: all 0.25s ease;
+}
+
+.resume-button::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+
+  background: #ff3ea5;
+
+  box-shadow:
+    0 0 10px rgba(255, 62, 165, 0.8);
+}
+
+.resume-button:hover {
+  color: #35e4ff;
+  border-color: #35e4ff;
+
+  box-shadow:
+    0 0 20px rgba(53, 228, 255, 0.8),
+    0 0 35px rgba(53, 228, 255, 0.5);
 }
 
 footer {
