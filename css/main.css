@@ -202,8 +202,8 @@ footer {
 
 .hud-corner {
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   z-index: 5;
 }
 
