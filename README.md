@@ -1,2 +1,2 @@
-# kendra-blankenship-portfolio-
+# kendra-blankenship-portfolio
 Network Systems and Cybersecurity Portfolio
