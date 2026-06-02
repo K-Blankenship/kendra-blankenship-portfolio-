@@ -171,7 +171,7 @@ footer {
   }
 }
 .portrait-frame {
-  padding: 4px;
+  padding: 5px;
 
   border-radius: 18px;
 
@@ -183,10 +183,10 @@ footer {
       #ff3ea5
     );
 
-  box-shadow:
-    0 0 20px rgba(53, 228, 255, 0.7),
-    0 0 35px rgba(155, 140, 255, 0.5),
-    0 0 45px rgba(255, 62, 165, 0.4);
+box-shadow:
+  0 0 14px rgba(53,228,255,.55),
+  0 0 24px rgba(155,140,255,.45),
+  0 0 32px rgba(255,62,165,.35);
 
   position: relative;
 }
