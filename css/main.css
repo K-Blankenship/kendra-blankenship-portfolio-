@@ -202,3 +202,44 @@ box-shadow:
   display: block;
   border-radius: 14px;
 }
+.portrait-frame {
+  position: relative;
+}
+
+/* TOP LEFT */
+.portrait-frame::before {
+  content: "";
+  position: absolute;
+
+  top: -12px;
+  left: -12px;
+
+  width: 40px;
+  height: 40px;
+
+  border-top: 3px solid #35e4ff;
+  border-left: 3px solid #35e4ff;
+
+  border-radius: 12px 0 0 0;
+
+  box-shadow: 0 0 12px rgba(53,228,255,.7);
+}
+
+/* BOTTOM RIGHT */
+.portrait-frame::after {
+  content: "";
+  position: absolute;
+
+  bottom: -12px;
+  right: -12px;
+
+  width: 40px;
+  height: 40px;
+
+  border-bottom: 3px solid #ff3ea5;
+  border-right: 3px solid #ff3ea5;
+
+  border-radius: 0 0 12px 0;
+
+  box-shadow: 0 0 12px rgba(255,62,165,.7);
+}
