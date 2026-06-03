@@ -95,6 +95,27 @@ body {
   font-size: 1.5rem;
   margin-top: 0.75rem;
 }
+.hero-content h2::after {
+  content: "";
+  display: block;
+
+  width: 100%;
+  max-width: 520px;
+  height: 2px;
+
+  margin-top: 1rem;
+
+  background: linear-gradient(
+    90deg,
+    #35e4ff,
+    #9b8cff,
+    #ff3ea5
+  );
+
+  box-shadow:
+    0 0 10px rgba(53, 228, 255, 0.45),
+    0 0 16px rgba(255, 62, 165, 0.35);
+}
 
 .bio-panel {
   max-width: 520px;
