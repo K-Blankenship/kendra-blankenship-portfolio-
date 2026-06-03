@@ -210,6 +210,7 @@ footer {
     margin: 0 auto;
   }
 }
+
 .portrait-frame {
   position: relative;
   padding: 5px;
@@ -223,9 +224,12 @@ footer {
   );
 
   box-shadow:
-    0 0 14px rgba(53,228,255,.55),
-    0 0 24px rgba(155,140,255,.45),
-    0 0 32px rgba(255,62,165,.35);
+    0 0 18px rgba(53,228,255,.9),
+    0 0 36px rgba(53,228,255,.6),
+    0 0 48px rgba(155,140,255,.55),
+    0 0 70px rgba(255,62,165,.45);
+
+  animation: portrait-flicker 6s ease-in-out infinite;
 }
 
 .portrait-container {
