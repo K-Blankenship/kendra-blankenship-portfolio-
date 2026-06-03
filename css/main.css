@@ -301,7 +301,7 @@ footer {
 
   opacity: .7;
 
-  animation: star-drift 30s linear infinite;
+  animation: star-drift 18s linear infinite;
 }
 
 .bg-grid {
@@ -337,10 +337,10 @@ footer {
 
 @keyframes grid-drift {
   from {
-    background-position: 0 0;
+    background-position: 0 0, 0 0, 0 0;
   }
 
   to {
-    background-position: 80px 80px;
+    background-position: 140px 140px, 220px 220px, 300px 300px;
   }
 }
