@@ -63,7 +63,7 @@ body {
 
   display: grid;
   grid-template-columns: 180px 1fr;
-  gap: 4.5rem;
+  gap: 2.75rem;
   align-items: center;
 }
 
