@@ -94,7 +94,12 @@ body {
   color: #9b8cff;
   font-size: 1.5rem;
   margin-top: 0.75rem;
+
+  text-shadow:
+    0 0 8px rgba(155, 140, 255, 0.65),
+    0 0 16px rgba(155, 140, 255, 0.35);
 }
+
 .hero-content h2::after {
   content: "";
   display: block;
