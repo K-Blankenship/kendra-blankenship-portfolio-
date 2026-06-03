@@ -117,9 +117,11 @@ body {
   );
 
   box-shadow:
-    0 0 8px rgba(53,228,255,.9),
-    0 0 16px rgba(155,140,255,.7),
-    0 0 24px rgba(255,62,165,.6);
+    0 0 10px rgba(53,228,255,1),
+    0 0 20px rgba(53,228,255,.85),
+    0 0 30px rgba(155,140,255,.8),
+    0 0 40px rgba(255,62,165,.75),
+    0 0 55px rgba(255,62,165,.6);
 
   animation: hud-pulse 4s ease-in-out infinite;
 }
