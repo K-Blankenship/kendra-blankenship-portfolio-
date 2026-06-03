@@ -124,7 +124,7 @@ body {
     0 0 40px rgba(155,140,255,.8),
     0 0 60px rgba(255,62,165,.8);
 
-  animation: portrait-flicker 5s infinite;
+  animation: portrait-flicker 4s infinite;
 }
 
 @keyframes hud-pulse {
@@ -230,7 +230,7 @@ footer {
     0 0 48px rgba(155,140,255,.55),
     0 0 70px rgba(255,62,165,.45);
 
-  animation: portrait-flicker 6s ease-in-out infinite;
+  animation: portrait-flicker 4s ease-in-out infinite;
 }
 
 @keyframes portrait-flicker {
