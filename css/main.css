@@ -124,7 +124,7 @@ body {
     0 0 40px rgba(155,140,255,.8),
     0 0 60px rgba(255,62,165,.8);
 
-  animation: hud-pulse 5s ease-in-out infinite;
+  animation: portrait-flicker 5s infinite;
 }
 
 @keyframes hud-pulse {
