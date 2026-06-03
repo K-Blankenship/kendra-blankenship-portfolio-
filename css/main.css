@@ -233,6 +233,35 @@ footer {
   animation: portrait-flicker 6s ease-in-out infinite;
 }
 
+@keyframes portrait-flicker {
+  0%,100% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: .92;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  81% {
+    opacity: .96;
+  }
+
+  82% {
+    opacity: 1;
+  }
+}
 .portrait-container {
   background: #050814;
   border-radius: 14px;
