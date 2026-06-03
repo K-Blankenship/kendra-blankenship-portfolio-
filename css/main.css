@@ -359,3 +359,48 @@ footer {
     background-position: 140px 140px, 220px 220px, 300px 300px;
   }
 }
+.bg-sparks {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(circle, rgba(53,228,255,1) 0 2px, transparent 4px),
+    radial-gradient(circle, rgba(255,62,165,1) 0 2px, transparent 4px),
+    radial-gradient(circle, rgba(155,140,255,1) 0 2px, transparent 4px);
+
+  background-size:
+    220px 220px,
+    300px 300px,
+    380px 380px;
+
+  background-position:
+    40px 80px,
+    120px 160px,
+    200px 40px;
+
+  opacity: 0.75;
+
+  filter:
+    drop-shadow(0 0 6px rgba(53,228,255,.9))
+    drop-shadow(0 0 10px rgba(255,62,165,.7));
+
+  animation: spark-drift 22s linear infinite;
+}
+
+@keyframes spark-drift {
+  from {
+    background-position:
+      40px 80px,
+      120px 160px,
+      200px 40px;
+  }
+
+  to {
+    background-position:
+      260px 300px,
+      420px 460px,
+      580px 420px;
+  }
+}
