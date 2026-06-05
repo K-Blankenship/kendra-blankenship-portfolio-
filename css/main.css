@@ -1334,6 +1334,13 @@ body.certifications-page {
 /* =========================================
    CONTACT PAGE
    ========================================= */
+.contact-page header,
+.contact-page .contact-header,
+.contact-page .contact-section,
+.contact-page footer {
+  position: relative;
+  z-index: 1;
+}
 
 .contact-page {
   position: relative;
@@ -1510,5 +1517,45 @@ body.certifications-page {
   50% {
     opacity: .6;
     transform: scale(1.15);
+  }
+}
+
+.contact-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 45%,
+      rgba(53,228,255,.08) 50%,
+      transparent 55%,
+      transparent 100%
+    );
+
+  animation: contact-signal-sweep 8s ease-in-out infinite;
+}
+
+@keyframes contact-signal-sweep {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: .5;
+  }
+
+  60% {
+    opacity: .35;
+  }
+
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
   }
 }
