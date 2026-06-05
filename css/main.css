@@ -1330,3 +1330,47 @@ body.certifications-page {
     transform: rotate(-18deg) translateX(40px);
   }
 }
+
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+
+.contact-page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.contact-page::before {
+  content:
+    "INCOMING TRANSMISSION • SECURE CHANNEL • CONNECTION ESTABLISHED • MESSAGE ROUTING\A"
+    "INCOMING TRANSMISSION • SECURE CHANNEL • CONNECTION ESTABLISHED • MESSAGE ROUTING\A"
+    "INCOMING TRANSMISSION • SECURE CHANNEL • CONNECTION ESTABLISHED • MESSAGE ROUTING";
+
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  color: rgba(53,228,255,.08);
+
+  font-size: 1rem;
+  letter-spacing: .35em;
+  line-height: 6rem;
+  text-transform: uppercase;
+
+  transform: rotate(-18deg);
+
+  white-space: pre-wrap;
+
+  animation: transmission-drift 35s ease-in-out infinite alternate;
+}
+
+@keyframes transmission-drift {
+  from {
+    transform: rotate(-18deg) translateX(-40px);
+  }
+
+  to {
+    transform: rotate(-18deg) translateX(40px);
+  }
+}
