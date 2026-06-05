@@ -608,7 +608,8 @@ body.about-page .bg-sparks {
    PROJECTS PAGE
 ================================ */
 body.projects-page {
-  background: #050814;
+   background: #050814;
+  overflow-x: hidden;
 }
 
 .projects-header {
