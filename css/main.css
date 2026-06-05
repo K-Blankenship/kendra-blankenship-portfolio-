@@ -824,7 +824,28 @@ body.projects-page {
     radial-gradient(circle at 25% 70%, #9b8cff 0 2px, transparent 3px),
     radial-gradient(circle at 65% 80%, #ff3ea5 0 2px, transparent 3px);
 
-  animation: network-pulse 6s ease-in-out infinite;
+  animation: 
+  network-pulse 6s ease-in-out infinite;
+  network-drift 18s ease-in-out infinite;
+}
+
+@keyframes network-drift {
+
+  0%,100% {
+    transform: translate(0,0);
+  }
+
+  25% {
+    transform: translate(8px,-5px);
+  }
+
+  50% {
+    transform: translate(-6px,6px);
+  }
+
+  75% {
+    transform: translate(4px,-8px);
+  }
 }
 
 .projects-page header,
