@@ -1527,35 +1527,21 @@ body.certifications-page {
   z-index: 0;
   pointer-events: none;
 
-  background:
-    linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 45%,
-      rgba(53,228,255,.08) 50%,
-      transparent 55%,
-      transparent 100%
-    );
+  background-image:
+    linear-gradient(rgba(53,228,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(53,228,255,.06) 1px, transparent 1px);
 
-  animation: contact-signal-sweep 8s ease-in-out infinite;
+  background-size: 80px 80px;
+
+  animation: grid-drift 25s linear infinite;
 }
 
-@keyframes contact-signal-sweep {
-  0% {
-    transform: translateX(-120%);
-    opacity: 0;
+@keyframes grid-drift {
+  from {
+    background-position: 0 0;
   }
 
-  30% {
-    opacity: .5;
-  }
-
-  60% {
-    opacity: .35;
-  }
-
-  100% {
-    transform: translateX(120%);
-    opacity: 0;
+  to {
+    background-position: 80px 80px;
   }
 }
