@@ -1454,3 +1454,53 @@ body.certifications-page {
 
   animation: portrait-flicker 4s infinite;
 }
+
+.contact-card h3 {
+  color: #d18cff;
+
+  letter-spacing: .08em;
+
+  text-shadow:
+    0 0 6px rgba(209,140,255,.45),
+    0 0 12px rgba(209,140,255,.25);
+}
+
+.status-online {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #f5f7ff;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #32ff7e;
+
+  box-shadow:
+    0 0 6px #32ff7e,
+    0 0 12px #32ff7e,
+    0 0 18px rgba(50,255,126,.8);
+}
+
+.status-dot {
+  animation: online-pulse 2s infinite;
+}
+
+@keyframes online-pulse {
+
+  0%,100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .6;
+    transform: scale(1.15);
+  }
+
+}
