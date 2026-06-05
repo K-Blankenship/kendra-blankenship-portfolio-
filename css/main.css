@@ -1527,9 +1527,9 @@ body.certifications-page {
   z-index: 0;
   pointer-events: none;
 
-  background-image:
-  linear-gradient(rgba(53,228,255,.10) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(53,228,255,.10) 1px, transparent 1px);
+background-image:
+  linear-gradient(rgba(53,228,255,.14) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(53,228,255,.14) 1px, transparent 1px);
 
   background-size: 80px 80px;
 
