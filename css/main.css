@@ -879,22 +879,22 @@ body.projects-page {
   inset: 0;
 
   background:
-    linear-gradient(120deg, transparent 0 45%, rgba(53,228,255,.9) 49%, transparent 53%),
-    linear-gradient(35deg, transparent 0 42%, rgba(255,62,165,.85) 48%, transparent 54%),
-    linear-gradient(145deg, transparent 0 44%, rgba(155,140,255,.85) 50%, transparent 56%);
+    linear-gradient(120deg, transparent 0 48%, rgba(53,228,255,.35) 49%, transparent 50%),
+    linear-gradient(35deg, transparent 0 48%, rgba(255,62,165,.30) 49%, transparent 50%),
+    linear-gradient(145deg, transparent 0 48%, rgba(155,140,255,.30) 49%, transparent 50%);
 
   background-size:
-    420px 420px,
-    620px 620px,
-    520px 520px;
+    900px 900px,
+    1100px 1100px,
+    1000px 1000px;
 
-  opacity: .45;
+  opacity: .18;
 
   filter:
-    drop-shadow(0 0 6px rgba(53,228,255,.8))
-    drop-shadow(0 0 10px rgba(255,62,165,.5));
+    drop-shadow(0 0 3px rgba(53,228,255,.45))
+    drop-shadow(0 0 5px rgba(255,62,165,.3));
 
-  animation: packet-flow 14s linear infinite;
+  animation: packet-flow 28s linear infinite;
 }
 
 @keyframes packet-flow {
