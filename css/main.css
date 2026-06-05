@@ -477,6 +477,10 @@ body.about-page {
   line-height: 1.7;
 }
 
+.about-content p {
+  margin-bottom: 1.75rem;
+}
+
 body.about-page .bg-stars,
 body.about-page .bg-grid,
 body.about-page .bg-sparks {
