@@ -1504,3 +1504,35 @@ body.certifications-page {
   }
 
 }
+
+.status-dot {
+  display: inline-block;
+
+  width: 10px;
+  height: 10px;
+
+  margin-right: 8px;
+
+  border-radius: 50%;
+
+  background: #32ff7e;
+
+  box-shadow:
+    0 0 6px #32ff7e,
+    0 0 12px #32ff7e,
+    0 0 18px rgba(50,255,126,.8);
+
+  animation: online-pulse 2s infinite;
+}
+
+@keyframes online-pulse {
+  0%,100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .6;
+    transform: scale(1.15);
+  }
+}
