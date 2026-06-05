@@ -1528,20 +1528,19 @@ body.certifications-page {
   pointer-events: none;
 
   background-image:
-    linear-gradient(rgba(53,228,255,.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(53,228,255,.06) 1px, transparent 1px);
+    radial-gradient(circle, rgba(53,228,255,.35) 1px, transparent 2px);
 
-  background-size: 80px 80px;
+  background-size: 200px 200px;
 
-  animation: grid-drift 25s linear infinite;
+  animation: particle-drift 30s linear infinite;
 }
 
-@keyframes grid-drift {
+@keyframes particle-drift {
   from {
-    background-position: 0 0;
+    background-position: 0 1000px;
   }
 
   to {
-    background-position: 80px 80px;
+    background-position: 0 0;
   }
 }
