@@ -566,9 +566,12 @@ body.about-page .bg-sparks {
 
 .about-header h2 {
   color: #9b8cff;
-
-  font-size: 1.5rem;   /* same as Home */
+  font-size: 1.5rem;
   margin-top: .75rem;
+
+  text-shadow:
+    0 0 8px rgba(155,140,255,.5),
+    0 0 16px rgba(155,140,255,.3);
 }
 
 .about-header h2::after {
