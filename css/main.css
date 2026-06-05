@@ -539,7 +539,7 @@ body.about-page .bg-sparks {
 
 .about-header {
   max-width: 900px;
-  margin: 3rem auto 2rem;
+  margin: 4rem auto 2rem;
 }
 
 .section-tag {
@@ -579,7 +579,7 @@ body.about-page .bg-sparks {
   display: block;
 
   width: 100%;
-  max-width: 520px;
+  max-width: 420px;
   height: 2px;
 
   margin-top: 1rem;
