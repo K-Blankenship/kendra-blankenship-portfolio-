@@ -468,13 +468,13 @@ footer {
 }
 
 body.about-page {
-  background:
-    linear-gradient(
-      135deg,
-      #03050b 0%,
-      #06131a 45%,
-      #082c33 100%
-    );
+  background: #050814;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  line-height: 1.7;
 }
 
 body.about-page .bg-stars,
