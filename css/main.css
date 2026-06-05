@@ -1048,6 +1048,7 @@ body.skills-page {
 
 .binary-bg span {
   position: absolute;
+  top: -120px;
 
   font-family: monospace;
   font-size: 1rem;
@@ -1077,4 +1078,52 @@ body.skills-page {
     transform: translateY(110vh);
   }
 
+}
+
+.binary-bg span:nth-child(1) {
+  left: 8%;
+  animation-duration: 9s;
+  animation-delay: 0s;
+}
+
+.binary-bg span:nth-child(2) {
+  left: 18%;
+  animation-duration: 12s;
+  animation-delay: -3s;
+}
+
+.binary-bg span:nth-child(3) {
+  left: 30%;
+  animation-duration: 10s;
+  animation-delay: -6s;
+}
+
+.binary-bg span:nth-child(4) {
+  left: 42%;
+  animation-duration: 14s;
+  animation-delay: -2s;
+}
+
+.binary-bg span:nth-child(5) {
+  left: 55%;
+  animation-duration: 11s;
+  animation-delay: -5s;
+}
+
+.binary-bg span:nth-child(6) {
+  left: 68%;
+  animation-duration: 13s;
+  animation-delay: -7s;
+}
+
+.binary-bg span:nth-child(7) {
+  left: 80%;
+  animation-duration: 10s;
+  animation-delay: -4s;
+}
+
+.binary-bg span:nth-child(8) {
+  left: 92%;
+  animation-duration: 15s;
+  animation-delay: -8s;
 }
