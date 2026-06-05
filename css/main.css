@@ -1037,3 +1037,44 @@ body.skills-page {
     grid-template-columns: 1fr;
   }
 }
+
+.binary-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.binary-bg span {
+  position: absolute;
+
+  font-family: monospace;
+  font-size: 1rem;
+  letter-spacing: 2px;
+
+  animation: binary-fall linear infinite;
+}
+
+.binary-bg span:nth-child(3n+1) {
+  color: #35e4ff;
+}
+
+.binary-bg span:nth-child(3n+2) {
+  color: #ff3ea5;
+}
+
+.binary-bg span:nth-child(3n) {
+  color: #9b8cff;
+}
+@keyframes binary-fall {
+
+  from {
+    transform: translateY(-150px);
+  }
+
+  to {
+    transform: translateY(110vh);
+  }
+
+}
