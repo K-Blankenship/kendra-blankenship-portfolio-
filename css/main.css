@@ -1298,3 +1298,23 @@ body.certifications-page {
   transform: rotate(-18deg);
   white-space: pre-wrap;
 }
+
+.cert-status {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+
+  transform: rotate(8deg);
+
+  border: 1px solid #35e4ff;
+  padding: 4px 10px;
+
+  color: #35e4ff;
+  background: rgba(53,228,255,.05);
+
+  letter-spacing: .18em;
+  text-transform: uppercase;
+
+  box-shadow:
+    0 0 10px rgba(53,228,255,.25);
+}
