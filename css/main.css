@@ -1528,8 +1528,8 @@ body.certifications-page {
   pointer-events: none;
 
   background-image:
-    linear-gradient(rgba(53,228,255,.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(53,228,255,.06) 1px, transparent 1px);
+  linear-gradient(rgba(53,228,255,.10) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(53,228,255,.10) 1px, transparent 1px);
 
   background-size: 80px 80px;
 
