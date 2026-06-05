@@ -791,3 +791,46 @@ body.projects-page {
     grid-template-columns: 1fr;
   }
 }
+
+@keyframes network-pulse {
+
+  0%,100% {
+    opacity: .25;
+    filter: drop-shadow(0 0 2px #35e4ff);
+  }
+
+  50% {
+    opacity: .45;
+    filter:
+      drop-shadow(0 0 6px #35e4ff)
+      drop-shadow(0 0 12px #35e4ff);
+  }
+}
+
+.network-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  opacity: .35;
+
+  background-image:
+
+    radial-gradient(circle at 15% 25%, #35e4ff 0 2px, transparent 3px),
+    radial-gradient(circle at 35% 40%, #9b8cff 0 2px, transparent 3px),
+    radial-gradient(circle at 60% 30%, #ff3ea5 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 55%, #35e4ff 0 2px, transparent 3px),
+    radial-gradient(circle at 25% 70%, #9b8cff 0 2px, transparent 3px),
+    radial-gradient(circle at 65% 80%, #ff3ea5 0 2px, transparent 3px);
+
+  animation: network-pulse 6s ease-in-out infinite;
+}
+
+.projects-page header,
+.projects-page .projects-header,
+.projects-page .projects-section,
+.projects-page footer {
+  position: relative;
+  z-index: 1;
+}
