@@ -1374,3 +1374,34 @@ body.certifications-page {
     transform: rotate(-18deg) translateX(40px);
   }
 }
+
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.contact-card {
+  position: relative;
+
+  padding: 2rem;
+
+  background: rgba(0,0,0,.35);
+
+  border: 2px solid transparent;
+  border-radius: 18px;
+
+  background-image:
+    linear-gradient(#02071a,#02071a),
+    linear-gradient(135deg,#35e4ff,#ff3ea5);
+
+  background-origin: border-box;
+  background-clip: padding-box,border-box;
+
+  box-shadow:
+    0 0 18px rgba(53,228,255,.35),
+    0 0 24px rgba(255,62,165,.18);
+}
