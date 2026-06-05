@@ -515,26 +515,22 @@ body.about-page .bg-sparks {
 @keyframes about-searchlight {
 
   0% {
-    transform: translate(-45vw, -10vh);
+    transform: translate(-55vw, -10vh);
   }
 
-  20% {
-    transform: translate(-20vw, 0vh);
+  25% {
+    transform: translate(10vw, -5vh);
   }
 
-  40% {
-    transform: translate(5vw, -5vh);
+  50% {
+    transform: translate(-65vw, 15vh);
   }
 
-  60% {
-    transform: translate(-15vw, 10vh);
-  }
-
-  80% {
-    transform: translate(-55vw, 20vh);
+  75% {
+    transform: translate(5vw, 25vh);
   }
 
   100% {
-    transform: translate(-45vw, -10vh);
+    transform: translate(-55vw, -10vh);
   }
 }
