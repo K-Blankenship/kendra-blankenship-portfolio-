@@ -812,83 +812,54 @@ body.projects-page {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-
-  opacity: .35;
-
-  background-image:
-
-    radial-gradient(circle at 15% 25%, #35e4ff 0 2px, transparent 3px),
-    radial-gradient(circle at 35% 40%, #9b8cff 0 2px, transparent 3px),
-    radial-gradient(circle at 60% 30%, #ff3ea5 0 2px, transparent 3px),
-    radial-gradient(circle at 80% 55%, #35e4ff 0 2px, transparent 3px),
-    radial-gradient(circle at 25% 70%, #9b8cff 0 2px, transparent 3px),
-    radial-gradient(circle at 65% 80%, #ff3ea5 0 2px, transparent 3px);
-
-  animation: 
-  network-pulse 6s ease-in-out infinite;
-  network-drift 18s ease-in-out infinite;
-}
-
-@keyframes network-drift {
-
-  0%,100% {
-    transform: translate(0,0);
-  }
-
-  25% {
-    transform: translate(8px,-5px);
-  }
-
-  50% {
-    transform: translate(-6px,6px);
-  }
-
-  75% {
-    transform: translate(4px,-8px);
-  }
-}
-
-.projects-page header,
-.projects-page .projects-header,
-.projects-page .projects-section,
-.projects-page footer {
-  position: relative;
-  z-index: 1;
+  opacity: .4;
 }
 
 .network-bg::before {
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0;
-  pointer-events: none;
-
-  opacity: .45;
 
   background:
-    linear-gradient(
-      115deg,
-      transparent 10%,
-      rgba(53,228,255,.65) 10.2%,
-      transparent 10.6%
-    ),
 
-    linear-gradient(
-      35deg,
-      transparent 28%,
-      rgba(155,140,255,.55) 28.2%,
-      transparent 28.6%
-    ),
+  linear-gradient(
+    120deg,
+    transparent 18%,
+    rgba(53,228,255,.35) 18.2%,
+    transparent 18.4%
+  ),
 
-    linear-gradient(
-      150deg,
-      transparent 55%,
-      rgba(255,62,165,.45) 55.2%,
-      transparent 55.6%
-    );
+  linear-gradient(
+    35deg,
+    transparent 28%,
+    rgba(255,62,165,.30) 28.2%,
+    transparent 28.4%
+  ),
+
+  linear-gradient(
+    145deg,
+    transparent 52%,
+    rgba(155,140,255,.30) 52.2%,
+    transparent 52.4%
+  ),
+
+  linear-gradient(
+    70deg,
+    transparent 74%,
+    rgba(53,228,255,.25) 74.2%,
+    transparent 74.4%
+  ),
+
+  linear-gradient(
+    160deg,
+    transparent 82%,
+    rgba(255,62,165,.25) 82.2%,
+    transparent 82.4%
+  );
 
   filter: blur(1px);
 
-  animation: network-lines 10s ease-in-out infinite;
+  animation: network-lines 12s ease-in-out infinite;
 }
 
 @keyframes network-lines {
