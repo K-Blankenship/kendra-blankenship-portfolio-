@@ -607,6 +607,9 @@ body.about-page .bg-sparks {
 /* ===============================
    PROJECTS PAGE
 ================================ */
+body.projects-page {
+  background: #050814;
+}
 
 .projects-header {
   max-width: 1200px;
