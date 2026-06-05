@@ -1357,6 +1357,7 @@ body.certifications-page {
 }
 
 .contact-card {
+  min-height: 180px;
   position: relative;
 
   padding: 2rem;
