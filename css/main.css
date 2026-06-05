@@ -1275,3 +1275,20 @@ body.certifications-page {
     grid-template-columns: 1fr;
   }
 }
+
+.certifications-page::before {
+  content: "AUTHORIZED • VERIFIED • RECORD ACTIVE • CREDENTIAL DATABASE • ACCESS GRANTED";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  color: rgba(53,228,255,.08);
+  font-size: 1rem;
+  letter-spacing: .35em;
+  line-height: 6rem;
+  text-transform: uppercase;
+
+  transform: rotate(-18deg);
+  white-space: pre-wrap;
+}
