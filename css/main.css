@@ -872,3 +872,40 @@ body.projects-page {
     opacity: .75;
   }
 }
+
+.network-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle, #35e4ff 0 3px, transparent 5px),
+    radial-gradient(circle, #ff3ea5 0 3px, transparent 5px),
+    radial-gradient(circle, #9b8cff 0 3px, transparent 5px);
+
+  background-size:
+    400px 400px,
+    600px 600px,
+    500px 500px;
+
+  animation: packet-flow 14s linear infinite;
+
+  opacity: .7;
+}
+
+@keyframes packet-flow {
+
+  0% {
+    background-position:
+      0px 0px,
+      500px 200px,
+      300px 600px;
+  }
+
+  100% {
+    background-position:
+      1200px 800px,
+      -500px 1200px,
+      1500px -400px;
+  }
+}
