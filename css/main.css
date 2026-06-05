@@ -878,29 +878,37 @@ body.projects-page {
   position: absolute;
   inset: 0;
 
+  background:
+    linear-gradient(120deg, transparent 0 45%, rgba(53,228,255,.9) 49%, transparent 53%),
+    linear-gradient(35deg, transparent 0 42%, rgba(255,62,165,.85) 48%, transparent 54%),
+    linear-gradient(145deg, transparent 0 44%, rgba(155,140,255,.85) 50%, transparent 56%);
+
   background-size:
-    400px 400px,
-    600px 600px,
-    500px 500px;
+    420px 420px,
+    620px 620px,
+    520px 520px;
+
+  opacity: .45;
+
+  filter:
+    drop-shadow(0 0 6px rgba(53,228,255,.8))
+    drop-shadow(0 0 10px rgba(255,62,165,.5));
 
   animation: packet-flow 14s linear infinite;
-
-  opacity: .7;
 }
 
 @keyframes packet-flow {
-
-  0% {
+  from {
     background-position:
-      0px 0px,
-      500px 200px,
-      300px 600px;
+      -300px -200px,
+      500px 100px,
+      200px 700px;
   }
 
-  100% {
+  to {
     background-position:
-      1200px 800px,
-      -500px 1200px,
-      1500px -400px;
+      900px 700px,
+      -400px 900px,
+      1300px -300px;
   }
 }
