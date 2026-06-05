@@ -1520,30 +1520,28 @@ body.certifications-page {
   }
 }
 
-.contact-page::after {
+.contact-page::before {
   content: "";
   position: fixed;
-  left: 0;
-  width: 100%;
-  height: 2px;
-
-  background: rgba(53,228,255,.35);
-
-  box-shadow:
-    0 0 12px rgba(53,228,255,.4);
-
-  pointer-events: none;
+  inset: 0;
   z-index: 0;
+  pointer-events: none;
 
-  animation: scan-line 8s linear infinite;
+  background-image:
+    linear-gradient(rgba(53,228,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(53,228,255,.06) 1px, transparent 1px);
+
+  background-size: 80px 80px;
+
+  animation: grid-drift 25s linear infinite;
 }
 
-@keyframes scan-line {
+@keyframes grid-drift {
   from {
-    top: -10px;
+    background-position: 0 0;
   }
 
   to {
-    top: 100%;
+    background-position: 80px 80px;
   }
 }
