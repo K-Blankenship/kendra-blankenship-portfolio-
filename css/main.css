@@ -1281,7 +1281,9 @@ body.certifications-page {
     "AUTHORIZED • VERIFIED • RECORD ACTIVE • CREDENTIAL DATABASE • ACCESS GRANTED\A"
     "AUTHORIZED • VERIFIED • RECORD ACTIVE • CREDENTIAL DATABASE • ACCESS GRANTED\A"
     "AUTHORIZED • VERIFIED • RECORD ACTIVE • CREDENTIAL DATABASE • ACCESS GRANTED";
-
+ 
+  animation: credential-drift 30s ease-in-out infinite alternate;
+  
   position: fixed;
   inset: 0;
   z-index: 0;
@@ -1317,4 +1319,14 @@ body.certifications-page {
 
   box-shadow:
     0 0 10px rgba(53,228,255,.25);
+}
+
+@keyframes credential-drift {
+  from {
+    transform: rotate(-18deg) translateX(-40px);
+  }
+
+  to {
+    transform: rotate(-18deg) translateX(40px);
+  }
 }
