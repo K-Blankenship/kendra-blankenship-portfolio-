@@ -991,8 +991,9 @@ body.skills-page {
 }
 
 .skill-card {
-  padding: 1.4rem;
-  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  min-height: 125px;
+}
 
   background:
     linear-gradient(#050814, #050814) padding-box,
