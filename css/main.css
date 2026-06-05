@@ -841,12 +841,31 @@ body.projects-page {
   inset: 0;
   pointer-events: none;
 
-  opacity: 0.22;
+  opacity: .45;
 
   background:
-    linear-gradient(115deg, transparent 10%, rgba(53,228,255,.35) 10.2%, transparent 10.6%),
-    linear-gradient(35deg, transparent 28%, rgba(155,140,255,.28) 28.2%, transparent 28.6%),
-    linear-gradient(150deg, transparent 55%, rgba(255,62,165,.22) 55.2%, transparent 55.6%);
+    linear-gradient(
+      115deg,
+      transparent 10%,
+      rgba(53,228,255,.65) 10.2%,
+      transparent 10.6%
+    ),
+
+    linear-gradient(
+      35deg,
+      transparent 28%,
+      rgba(155,140,255,.55) 28.2%,
+      transparent 28.6%
+    ),
+
+    linear-gradient(
+      150deg,
+      transparent 55%,
+      rgba(255,62,165,.45) 55.2%,
+      transparent 55.6%
+    );
+
+  filter: blur(1px);
 
   animation: network-lines 10s ease-in-out infinite;
 }
