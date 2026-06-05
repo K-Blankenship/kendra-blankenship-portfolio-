@@ -1001,9 +1001,9 @@ body.skills-page {
 
   border: 2px solid transparent;
 
-  box-shadow:
-    0 0 18px rgba(53,228,255,.5),
-    0 0 28px rgba(255,62,165,.28);
+box-shadow:
+  0 0 12px rgba(53,228,255,.4),
+  0 0 20px rgba(255,62,165,.22);
 
   transition: all .25s ease;
 }
