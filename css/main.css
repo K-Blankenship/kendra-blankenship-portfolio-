@@ -863,11 +863,12 @@ body.projects-page {
 }
 
 @keyframes network-lines {
-  0%, 100% {
-    opacity: 0.12;
+
+  0%,100% {
+    opacity: .45;
   }
 
   50% {
-    opacity: 0.35;
+    opacity: .75;
   }
 }
