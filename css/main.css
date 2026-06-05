@@ -501,7 +501,7 @@ body.about-page .bg-sparks {
   );
 
   filter: blur(18px);
-  animation: about-searchlight 18s ease-in-out infinite;
+  animation: about-searchlight 24s ease-in-out infinite;
 }
 
 .about-page header,
@@ -513,19 +513,28 @@ body.about-page .bg-sparks {
 }
 
 @keyframes about-searchlight {
-  0%, 100% {
-    transform: translate(-20vw, -8vh);
+
+  0% {
+    transform: translate(-45vw, -10vh);
   }
 
-  30% {
-    transform: translate(8vw, 2vh);
+  20% {
+    transform: translate(-20vw, 0vh);
+  }
+
+  40% {
+    transform: translate(5vw, -5vh);
   }
 
   60% {
-    transform: translate(-5vw, 18vh);
+    transform: translate(-15vw, 10vh);
   }
 
   80% {
-    transform: translate(-28vw, 10vh);
+    transform: translate(-55vw, 20vh);
+  }
+
+  100% {
+    transform: translate(-45vw, -10vh);
   }
 }
