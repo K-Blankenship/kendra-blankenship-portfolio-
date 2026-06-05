@@ -1406,6 +1406,17 @@ body.certifications-page {
     0 0 24px rgba(255,62,165,.18);
 }
 
+.contact-card a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+.contact-card a:hover {
+  color: #ff3ea5;
+  text-shadow: 0 0 10px rgba(255,62,165,.5);
+}
+
 .contact-header {
   max-width: 900px;
   margin: 3rem auto 2rem;
